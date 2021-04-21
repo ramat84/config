@@ -13,7 +13,7 @@ Plug 'junegunn/fzf.vim'                             " Fast Text Search In Files
 Plug 'easymotion/vim-easymotion'                    " Fast Jump to character
 Plug 'andy-piccalilli/vim-jsdoc'                    " Add Javascript Documentation
 Plug 'pangloss/vim-javascript'                      " Javascript Documentation Syntax Highligh
- 
+Plug 'svermeulen/vim-easyclip'                      " Better delete and cut (m to cut)
 call plug#end()
 
 source ~/.config/nvim/conf/plugins/buffers.vim

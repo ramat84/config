@@ -19,7 +19,7 @@ nmap <C-h> :History<CR>
 nmap <C-o> :GFiles<CR>
 " Open Files
 
-nmap <C-f> :Files<CR>
+nmap <C-f> :Ag<CR>
 " Search Files
 
 nmap <C-s> :w<CR>
@@ -31,3 +31,10 @@ nmap <C-s> :w<CR>
 
 nmap <C-n> :NERDTreeToggle<CR>
 nmap <C-m> :NERDTreeFind<CR>
+
+" JSDoc
+
+nmap <C-d> :JsDoc<CR>
+
+" Replace word
+nnoremap <leader>r yiw:%s/<C-r>"/<C-r>"/g<left><left>

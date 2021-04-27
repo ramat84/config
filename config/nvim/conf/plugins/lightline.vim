@@ -17,7 +17,8 @@ nmap <Leader>9 :call lightline#bufferline#go(9)<CR>
 set showtabline=2
 
 let g:lightline = {
-      \ 'colorscheme': 'one',
+      \ 'colorscheme': 'selenized_black',
+      \ 'subseparator': { 'left': '|', 'right': '|' },
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'filename', 'modified' ] ]
       \ },

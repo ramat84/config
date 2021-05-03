@@ -13,8 +13,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Search In Files
 Plug 'junegunn/fzf.vim'                             " Search In Files
 
 " ___[ Theme ]___ "
-Plug 'rafi/awesome-vim-colorschemes'                " Color Themes
 Plug 'ryanoasis/vim-devicons'                       " File Manager Icons
+Plug 'morhetz/gruvbox'                              " Color Theme
 
 " ___[ Git ]___ "
 Plug 'tpope/vim-fugitive'                           " Git commands
@@ -36,6 +36,10 @@ Plug 'svermeulen/vim-easyclip'                      " Better delete and cut (m t
 Plug 'martinda/Jenkinsfile-vim-syntax'              " Edit Jenkinsfile with ease
 Plug 'segeljakt/vim-stealth'                        " Toggle Comments
 Plug 'cakebaker/scss-syntax.vim'                    " SCSS
+
+" ___[ PHP ]___ "
+Plug 'StanAngeloff/php.vim'                         " Highlight
+
 
 call plug#end()
 

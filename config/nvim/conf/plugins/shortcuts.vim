@@ -12,3 +12,5 @@ nnoremap <leader>f yiw:Rg <C-r>"<CR>
 nmap <leader>n :set nu!<CR>:set relativenumber!<CR> 
 
 nmap <leader>d o echo 'okk'.__LINE__;die();<ESC>:w<CR>
+
+nmap <leader>w :set wrap!<CR>

@@ -13,25 +13,9 @@ nmap <Leader>7 :call lightline#bufferline#go(7)<CR>
 nmap <Leader>8 :call lightline#bufferline#go(8)<CR>
 nmap <Leader>9 :call lightline#bufferline#go(9)<CR>
 
-
-set showtabline=2
-
-let g:lightline = {
-      \ 'colorscheme': 'selenized_black',
-      \ 'subseparator': { 'left': '|', 'right': '|' },
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'tabline': {
-      \   'left': [ ['buffers'] ],
-      \   'right': [ ['close'] ]
-      \ },
-      \ 'component_expand': {
-      \   'buffers': 'lightline#bufferline#buffers'
-      \ },
-      \ 'component_type': {
-      \   'buffers': 'tabsel'
-      \ }
-      \ }
+let g:lightline                  = {}
+let g:lightline.tabline          = {'left': [['buffers']], 'right': [['close']]}
+let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
+let g:lightline.component_type   = {'buffers': 'tabsel'}
 
 autocmd BufWritePost,TextChanged,TextChangedI * call lightline#update()

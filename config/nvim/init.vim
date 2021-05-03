@@ -7,7 +7,6 @@ Plug 'preservim/nerdtree'                           " File Manager
 Plug 'neoclide/coc.nvim'                            " Coc Autocomplete
 Plug 'vim-airline/vim-airline'                      " Status Line
 Plug 'vim-airline/vim-airline-themes'               " Status Line Themes
-Plug 'bling/vim-bufferline'                         " Buffers
 
 " ___[ Search ]___ "
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Search In Files

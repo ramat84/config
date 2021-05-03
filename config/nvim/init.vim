@@ -8,6 +8,7 @@ Plug 'neoclide/coc.nvim'                            " Coc Autocomplete
 Plug 'vim-airline/vim-airline'                      " Status Line
 Plug 'vim-airline/vim-airline-themes'               " Status Line Themes
 Plug 'bling/vim-bufferline'                         " Buffers
+Plug 'Xuyuanp/scrollbar.nvim'                       " Scroller
 
 " ___[ Search ]___ "
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Search In Files
@@ -41,6 +42,7 @@ Plug 'cakebaker/scss-syntax.vim'                    " SCSS
 call plug#end()
 
 source ~/.config/nvim/conf/plugins/theme.vim
+source ~/.config/nvim/conf/plugins/scroll.vim
 source ~/.config/nvim/conf/plugins/NERDTree.vim
 source ~/.config/nvim/conf/plugins/shortcuts.vim
 source ~/.config/nvim/conf/plugins/tabs.vim

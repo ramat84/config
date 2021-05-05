@@ -20,6 +20,7 @@ Plug 'morhetz/gruvbox'                              " Color Theme
 Plug 'tpope/vim-fugitive'                           " Git commands
 Plug 'airblade/vim-gitgutter'                       " Git Icons
 Plug 'whiteinge/diffconflicts'                      " Two-way diff
+Plug 'kdheepak/lazygit.nvim', { 'branch': 'nvim-v0.4.3' } " LazyGit manager
 
 " ___[ Javascript ]___ "
 Plug 'andy-piccalilli/vim-jsdoc'                    " JSDoc
@@ -39,7 +40,7 @@ Plug 'cakebaker/scss-syntax.vim'                    " SCSS
 
 " ___[ PHP ]___ "
 Plug 'StanAngeloff/php.vim'                         " Highlight
-
+Plug 'mattn/emmet-vim'                              " HTML Tags
 
 call plug#end()
 

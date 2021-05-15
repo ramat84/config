@@ -8,7 +8,8 @@ Plug 'vim-airline/vim-airline'                      " Status Line
 Plug 'vim-airline/vim-airline-themes'               " Status Line Themes
 Plug 'ryanoasis/vim-devicons'                       " File Manager Icons
 Plug 'kaicataldo/material.vim', { 'branch': 'main'} " Color Theme
-Plug 'yuttie/comfortable-motion.vim'                " Smooth Scroll
+Plug 'luochen1990/rainbow'                          " Colored Brackets
+" Plug 'yuttie/comfortable-motion.vim'                " Smooth Scroll
 
 " ___[ Code ]___ "
 Plug 'neoclide/coc.nvim'                            " Coc Autocomplete

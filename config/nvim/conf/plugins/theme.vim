@@ -7,3 +7,4 @@ set background=dark
 
 let g:gruvbox_contrast_dark='medium'
 let g:airline_theme='dark'
+let g:rainbow_active = 1

@@ -1,0 +1,16 @@
+[user]
+	email = ram@vcita.com
+	name = Ram Matityahu
+[merge]
+	tool = diffconflicts
+[mergetool "diffconflicts"]
+	cmd = nvim -c DiffConflicts \"$MERGED\" \"$BASE\" \"$LOCAL\" \"$REMOTE\"
+	trustExitCode = true
+[mergetool]
+	keepBackup = false
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    whitespace-error-style = 22 reverse
+    line-numbers = false
+    decorations = true

@@ -14,5 +14,5 @@ nmap <leader>n :set nu!<CR>:set relativenumber!<CR>
 nmap <leader>d o echo 'okk'.__LINE__;die();<ESC>:w<CR>
 
 nmap <leader>w :set wrap!<CR>
-
-nmap <leader>u :UndotreeToggle<CR>
+map <nowait> <leader>c <plug>NERDCommenterToggle
+nmap <leader>l :LazyGit<CR>

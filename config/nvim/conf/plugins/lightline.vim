@@ -1,6 +1,5 @@
 
 " ** Buffers **
-set hidden
 
 let g:lightline#bufferline#show_number = 2
 nmap <Leader>1 :call lightline#bufferline#go(1)<CR>

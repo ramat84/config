@@ -18,17 +18,31 @@ nmap <leader>w :set wrap!<CR>
 map <nowait> <leader>c <plug>NERDCommenterToggle
 nmap <leader>l :LazyGit<CR>
 
+" Search
 nmap <C-h> :NERDTreeClose<CR>:History<CR>
 nmap <C-o> :NERDTreeClose<CR>:GFiles<CR>
 nmap <C-f> :NERDTreeClose<CR>:Rg<CR>
 nmap <C-n> :NERDTreeToggle<CR>
 nmap <C-m> :NERDTreeFind<CR>
 
+" Buffers
+"
+"" Close
+"
 nmap <C-c> :bd<CR>
 nmap <C-q> :bd!<CR>
-nmap <F4> :bnext<CR>
-nmap <Leader>x :bnext<CR>
+"
+"" Prev/Next
 nmap <F3> :bprev<CR>
 nmap <F4> :bnext<CR>
 nmap <leader>z :bprev<CR>
-nmap <leader>x :bnext<CR>
+nmap <Leader>x :bnext<CR>
+
+" New line
+map <Enter> o<ESC>
+
+map <C-Enter> O<ESC>
+
+" Clear highlighting on escape in normal mode
+nnoremap <esc> :noh<return><esc>
+nnoremap <esc>^[ <esc>^[

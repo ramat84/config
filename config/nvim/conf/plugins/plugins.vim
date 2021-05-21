@@ -8,8 +8,6 @@ Plug 'vim-airline/vim-airline'                      " Status Line
 Plug 'vim-airline/vim-airline-themes'               " Status Line Themes
 Plug 'ryanoasis/vim-devicons'                       " File Manager Icons
 Plug 'kaicataldo/material.vim', { 'branch': 'main'} " Color Theme
-Plug 'luochen1990/rainbow'                          " Colored Brackets
-" Plug 'yuttie/comfortable-motion.vim'                " Smooth Scroll
 
 " ___[ Code ]___ "
 Plug 'neoclide/coc.nvim'                            " Coc Autocomplete
@@ -17,6 +15,8 @@ Plug 'junegunn/vim-easy-align'                      " Align comments
 Plug 'preservim/nerdcommenter'                      " Toggle Comments
 Plug 'mattn/emmet-vim'                              " HTML Tags
 Plug 'andy-piccalilli/vim-jsdoc'                    " JSDoc
+Plug 'tobyS/vmustache'                              " PDV Requirement
+Plug 'tobyS/pdv'                                    " PHPdoc
 
 " ___[ Syntax ]___ "
 Plug 'StanAngeloff/php.vim'                         " Highlight PHP Code

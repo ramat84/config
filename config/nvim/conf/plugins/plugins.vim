@@ -19,11 +19,10 @@ Plug 'tobyS/vmustache'                              " PDV Requirement
 Plug 'tobyS/pdv'                                    " PHPdoc
 
 " ___[ Syntax ]___ "
-Plug 'StanAngeloff/php.vim'                         " Highlight PHP Code
-Plug 'cakebaker/scss-syntax.vim'                    " SCSS
-Plug 'pangloss/vim-javascript'                      " Syntax Highlighting
-Plug 'kern/vim-es7'                                 " es6 syntax
+Plug 'pangloss/vim-javascript'                      " Better javascript support
 Plug 'martinda/Jenkinsfile-vim-syntax'              " Edit Jenkinsfile with ease
+Plug 'sheerun/vim-polyglot'                         " Languages support
+Plug 'prettier/vim-prettier'                        " Prettier code
 
 " ___[ Search ]___ "
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Search In Files
@@ -44,5 +43,6 @@ Plug 'segeljakt/vim-stealth'                        " Toggle Comments Visibility
 " ___[ Tweaks ]___ "
 Plug 'machakann/vim-highlightedyank'                " Highlight Yanked
 Plug 'myusuf3/numbers.vim'                          " Relative Numbers in edit mode
+Plug 'okcompute/vim-javascript-motions'             " Javascript Motions
 
 call plug#end()

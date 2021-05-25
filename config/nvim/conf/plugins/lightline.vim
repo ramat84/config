@@ -18,3 +18,4 @@ let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
 let g:lightline.component_type   = {'buffers': 'tabsel'}
 
 autocmd BufWritePost,TextChanged,TextChangedI * call lightline#update()
+

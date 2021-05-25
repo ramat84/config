@@ -8,19 +8,21 @@ Plug 'vim-airline/vim-airline'                      " Status Line
 Plug 'vim-airline/vim-airline-themes'               " Status Line Themes
 Plug 'ryanoasis/vim-devicons'                       " File Manager Icons
 Plug 'kaicataldo/material.vim', { 'branch': 'main'} " Color Theme
+Plug 'terryma/vimv-multiple-cursors'                " Multiple Cursors
+Plug 'numEricL/nerdtree-live-preview'               " Live preview for files in File manager
 
 " ___[ Code ]___ "
 Plug 'neoclide/coc.nvim'                            " Coc Autocomplete
 Plug 'junegunn/vim-easy-align'                      " Align comments
 Plug 'preservim/nerdcommenter'                      " Toggle Comments
-Plug 'mattn/emmet-vim'                              " HTML Tags
+Plug 'mattn/emmet-vim'          , { 'for': 'php' }  " HTML Tags
 Plug 'andy-piccalilli/vim-jsdoc'                    " JSDoc
-Plug 'tobyS/vmustache'                              " PDV Requirement
-Plug 'tobyS/pdv'                                    " PHPdoc
+Plug 'tobyS/vmustache'          , { 'for': 'php'  } " PDV Requirement
+Plug 'tobyS/pdv'                , { 'for': 'php'  } " PHPdoc            | Use Ctrl-P
 
 " ___[ Syntax ]___ "
 Plug 'pangloss/vim-javascript'                      " Better javascript support
-Plug 'martinda/Jenkinsfile-vim-syntax'              " Edit Jenkinsfile with ease
+Plug 'martinda/Jenkinsfile-vim-syntax', { 'for': 'Jenkinsfile' } " Edit Jenkinsfile with ease
 Plug 'sheerun/vim-polyglot'                         " Languages support
 Plug 'prettier/vim-prettier'                        " Prettier code
 
@@ -36,13 +38,12 @@ Plug 'kdheepak/lazygit.nvim', { 'branch': 'nvim-v0.4.3' } " LazyGit manager
 
 " ___[ Shortcuts ]___ "
 Plug 'chrisbra/improvedft'                          " Multiline find (f/t)
-Plug 'svermeulen/vim-easyclip'                      " Better delete and cut (m to cut)
 Plug 'ckarnell/Antonys-macro-repeater'              " Repeat Macros
 Plug 'segeljakt/vim-stealth'                        " Toggle Comments Visibility
 
 " ___[ Tweaks ]___ "
 Plug 'machakann/vim-highlightedyank'                " Highlight Yanked
 Plug 'myusuf3/numbers.vim'                          " Relative Numbers in edit mode
-Plug 'okcompute/vim-javascript-motions'             " Javascript Motions
+Plug 'okcompute/vim-javascript-motions', { 'for': 'javascript' } " Javascript Motions
 
 call plug#end()

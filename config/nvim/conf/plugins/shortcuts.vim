@@ -39,9 +39,8 @@ nmap <leader>z :bprev<CR>
 nmap <Leader>x :bnext<CR>
 
 " New line
-map <Enter> o<ESC>
-
-map <C-Enter> O<ESC>
+"map <Enter> o<ESC>
+"map <C-Enter> O<ESC>
 
 " Clear highlighting on escape in normal mode
 nnoremap <esc> :noh<return><esc>

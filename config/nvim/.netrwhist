@@ -1,3 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/ram/stargate/dev/theme-tools/js'
+let g:netrw_dirhist_6='/home/ram/stargate/dev/themes'
+let g:netrw_dirhist_5='/home/ram/stargate/dev'
+let g:netrw_dirhist_4='/home/ram/stargate/dev/theme-tools'
+let g:netrw_dirhist_3='/home/ram/stargate/dev'
+let g:netrw_dirhist_2='/home/ram/stargate/dev/theme-tools/js'
 let g:netrw_dirhist_1='/Users/vcita/stargate/dev/themes/website-pages/src/css/client'

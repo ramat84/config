@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/ram/stargate/dev/theme-tools/Components'
 let g:netrw_dirhist_7='/home/ram/stargate/dev/theme-tools/js'
 let g:netrw_dirhist_6='/home/ram/stargate/dev/themes'
 let g:netrw_dirhist_5='/home/ram/stargate/dev'

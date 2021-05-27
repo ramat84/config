@@ -8,23 +8,28 @@ Plug 'vim-airline/vim-airline'                      " Status Line
 Plug 'vim-airline/vim-airline-themes'               " Status Line Themes
 Plug 'ryanoasis/vim-devicons'                       " File Manager Icons
 Plug 'kaicataldo/material.vim', { 'branch': 'main'} " Color Theme
-Plug 'terryma/vimv-multiple-cursors'                " Multiple Cursors
+Plug 'terryma/vim-multiple-cursors'                 " Multiple Cursors
 Plug 'numEricL/nerdtree-live-preview'               " Live preview for files in File manager
+Plug 'kshenoy/vim-signature'                        " Show Marks
 
 " ___[ Code ]___ "
-Plug 'neoclide/coc.nvim'                            " Coc Autocomplete
-Plug 'junegunn/vim-easy-align'                      " Align comments
-Plug 'preservim/nerdcommenter'                      " Toggle Comments
+Plug 'neoclide/coc.nvim'                                 " Coc Autocomplete
+Plug 'junegunn/vim-easy-align'                           " Align comments
+Plug 'preservim/nerdcommenter'                           " Toggle Comments
+Plug 'andy-piccalilli/vim-jsdoc',{ 'for': 'javascript' } " JSDoc
+Plug 'szw/vim-tags'                                      " Manage Ctags
+Plug 'preservim/tagbar'                                  " Tags list
+
+" ___[ PHP ]___ "
 Plug 'mattn/emmet-vim'          , { 'for': 'php' }  " HTML Tags
-Plug 'andy-piccalilli/vim-jsdoc'                    " JSDoc
 Plug 'tobyS/vmustache'          , { 'for': 'php'  } " PDV Requirement
 Plug 'tobyS/pdv'                , { 'for': 'php'  } " PHPdoc            | Use Ctrl-P
 
 " ___[ Syntax ]___ "
-Plug 'pangloss/vim-javascript'                      " Better javascript support
+Plug 'pangloss/vim-javascript'                                   " Better javascript support
 Plug 'martinda/Jenkinsfile-vim-syntax', { 'for': 'Jenkinsfile' } " Edit Jenkinsfile with ease
-Plug 'sheerun/vim-polyglot'                         " Languages support
-Plug 'prettier/vim-prettier'                        " Prettier code
+Plug 'sheerun/vim-polyglot'                                      " Languages support
+Plug 'prettier/vim-prettier'                                     " Prettier code
 
 " ___[ Search ]___ "
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Search In Files
@@ -45,5 +50,6 @@ Plug 'segeljakt/vim-stealth'                        " Toggle Comments Visibility
 Plug 'machakann/vim-highlightedyank'                " Highlight Yanked
 Plug 'myusuf3/numbers.vim'                          " Relative Numbers in edit mode
 Plug 'okcompute/vim-javascript-motions', { 'for': 'javascript' } " Javascript Motions
+Plug 'fcpg/vim-osc52'                               " Global Terminal Clipboard Support
 
 call plug#end()

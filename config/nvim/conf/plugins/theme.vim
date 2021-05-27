@@ -5,6 +5,7 @@ highlight LineNr ctermfg=gray ctermbg=darkgray
 highlight SignColumn ctermfg=gray ctermbg=darkgray
 set background=dark
 set autoread
+set showcmd
 
 let g:gruvbox_contrast_dark='medium'
 let g:rainbow_active = 1
@@ -20,3 +21,6 @@ let g:multi_cursor_next_key            = '<C-n>'
 let g:multi_cursor_prev_key            = '<C-p>'
 let g:multi_cursor_skip_key            = '<C-x>'
 let g:multi_cursor_quit_key            = '<Esc>'
+
+" Tagbar
+let g:tagbar_sort = 0

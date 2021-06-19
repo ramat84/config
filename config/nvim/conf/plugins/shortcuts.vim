@@ -1,6 +1,7 @@
 " *** Keyboard ShortCuts ***
 let mapleader = " "
-
+let &t_TI = ""
+let &t_TE = ""
 
 nmap <C-s> :w<CR>
 
@@ -20,8 +21,8 @@ nmap <leader>l :LazyGit<CR>
 
 " Search
 nmap <C-h> :NERDTreeClose<CR>:History<CR>
-nmap <C-o> :NERDTreeClose<CR>:GFiles<CR>
-nmap <C-f> :NERDTreeClose<CR>:Rg<CR>
+nmap <C-o> :NERDTreeClose<CR>:Files<CR>
+nnoremap <C-f> :NERDTreeClose<CR>:Rg<CR>
 nmap <C-n> :NERDTreeToggle<CR>
 nmap <C-m> :NERDTreeFind<CR>
 
@@ -35,8 +36,8 @@ nmap <C-q> :bd!<CR>
 "" Prev/Next
 nmap <F3> :bprev<CR>
 nmap <F4> :bnext<CR>
-nmap <leader>z :bprev<CR>
-nmap <Leader>x :bnext<CR>
+nmap <M-z> :bprev<CR>
+nmap <M-x> :bnext<CR>
 
 " New line
 "map <Enter> o<ESC>

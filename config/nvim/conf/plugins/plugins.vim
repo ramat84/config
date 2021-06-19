@@ -8,7 +8,7 @@ Plug 'vim-airline/vim-airline'                      " Status Line
 Plug 'vim-airline/vim-airline-themes'               " Status Line Themes
 Plug 'ryanoasis/vim-devicons'                       " File Manager Icons
 Plug 'kaicataldo/material.vim', { 'branch': 'main'} " Color Theme
-Plug 'terryma/vim-multiple-cursors'                 " Multiple Cursors
+Plug 'terryma/vim-multiple-cursors'                 " Multiple Cursors (Alt-n)
 Plug 'numEricL/nerdtree-live-preview'               " Live preview for files in File manager
 Plug 'kshenoy/vim-signature'                        " Show Marks
 

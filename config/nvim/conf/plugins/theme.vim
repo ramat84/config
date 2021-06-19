@@ -1,11 +1,17 @@
 "colorscheme onedark 
 "colorscheme gruvbox
 colorscheme material
-highlight LineNr ctermfg=gray ctermbg=darkgray
-highlight SignColumn ctermfg=gray ctermbg=darkgray
 set background=dark
 set autoread
 set showcmd
+set rnu " Relative number
+
+" highlight LineNr ctermfg=gray ctermbg=DarkBlue
+"highlight SignColumn ctermfg=gray ctermbg=DarkGrey
+"highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+
+set scrolloff=20 " Always show these lines after the caret 
+
 
 let g:gruvbox_contrast_dark='medium'
 let g:rainbow_active = 1
@@ -22,5 +28,14 @@ let g:multi_cursor_prev_key            = '<C-p>'
 let g:multi_cursor_skip_key            = '<C-x>'
 let g:multi_cursor_quit_key            = '<Esc>'
 
-" Tagbar
+" Tags
+
+let Tlist_Use_Right_Window = 1
 let g:tagbar_sort = 0
+
+hi clear SpellCap
+hi SpellCap cterm=underline ctermfg=red
+hi clear SpellBad
+hi SpellBad cterm=underline ctermfg=red
+
+hi Search cterm=bold,underline ctermfg=red ctermbg=black

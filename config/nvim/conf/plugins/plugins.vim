@@ -9,7 +9,6 @@ Plug 'vim-airline/vim-airline-themes'               " Status Line Themes
 Plug 'ryanoasis/vim-devicons'                       " File Manager Icons
 Plug 'kaicataldo/material.vim', { 'branch': 'main'} " Color Theme
 Plug 'terryma/vim-multiple-cursors'                 " Multiple Cursors
-Plug 'numEricL/nerdtree-live-preview'               " Live preview for files in File manager
 Plug 'kshenoy/vim-signature'                        " Show Marks
 Plug 'justinmk/vim-sneak'                           " Go to the next 2 chars (sXX)
 Plug 'joeytwiddle/sexy_scroller.vim'                " Smooth Motion
@@ -25,6 +24,7 @@ Plug 'preservim/tagbar'                                  " Tags list
 Plug 'wellle/targets.vim'                                " Extend targets like ',' and '_'
 Plug 'mpolitzer/plaintasks.vim'                          " Todo Lists (.todo)
 Plug 'forevernull/vim-json-format'                       " json format
+Plug 'jiangmiao/auto-pairs'                              " Auto close brackets
 
 " __[ Text Objects ]__ "
 Plug 'kana/vim-textobj-user'                             " User text objects (for the next plugin)

@@ -39,3 +39,4 @@ hi clear SpellBad
 hi SpellBad cterm=underline ctermfg=red
 
 hi Search cterm=bold,underline ctermfg=red ctermbg=black
+

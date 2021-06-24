@@ -25,6 +25,7 @@ Plug 'preservim/tagbar'                                  " Tags list
 Plug 'wellle/targets.vim'                                " Extend targets like ',' and '_'
 Plug 'mpolitzer/plaintasks.vim'                          " Todo Lists (.todo)
 Plug 'forevernull/vim-json-format'                       " json format
+Plug 'jiangmiao/auto-pairs'                              " Auto close brackets
 
 " __[ Text Objects ]__ "
 Plug 'kana/vim-textobj-user'                             " User text objects (for the next plugin)

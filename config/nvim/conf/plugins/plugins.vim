@@ -29,8 +29,10 @@ Plug 'jiangmiao/auto-pairs'                              " Auto close brackets
 
 " __[ Text Objects ]__ "
 Plug 'kana/vim-textobj-user'                             " User text objects (for the next plugin)
-Plug 'aikawa9376/vim-textobj-php'                        " PHP Tag Object (p)
-Plug 'adelarsq/vim-matchit'                              " Required for function php
+"Plug 'aikawa9376/vim-textobj-php'                        " PHP Tag Object (p)
+"Plug 'adelarsq/vim-matchit'                              " Required for function php
+Plug 'kana/vim-textobj-function'                         " Function Textobject
+"Plug 'thinca/vim-textobj-function-javascript'
 Plug 'kentaro/vim-textobj-function-php'                  " PHP functions (f)
 
 " ___[ PHP ]___ "

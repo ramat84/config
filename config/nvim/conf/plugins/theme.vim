@@ -4,7 +4,7 @@ colorscheme material
 set background=dark
 set autoread
 set showcmd
-set rnu " Relative number
+"set rnu " Relative number
 
 " highlight LineNr ctermfg=gray ctermbg=DarkBlue
 "highlight SignColumn ctermfg=gray ctermbg=DarkGrey

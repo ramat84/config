@@ -11,7 +11,8 @@ nnoremap <leader>r yiw:%s/<C-r>"/<C-r>"/g<left><left>
 nnoremap <leader>f yiw:Rg <C-r>"<CR>
 
 " Toggle numbers
-nmap <leader>n :set nu!<CR>:set relativenumber!<CR> 
+"nmap <leader>n :set nu!<CR>:set relativenumber!<CR> 
+nmap <leader>n :set nu!<CR>
 
 nmap <leader>d o echo 'okk'.__LINE__;die();<ESC>:w<CR>
 

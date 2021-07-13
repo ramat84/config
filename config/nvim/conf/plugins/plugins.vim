@@ -24,10 +24,11 @@ Plug 'mpolitzer/plaintasks.vim'                          " Todo Lists (.todo)
 Plug 'forevernull/vim-json-format'                       " json format
 Plug 'jiangmiao/auto-pairs'                              " Auto close brackets
 
-" __[ Text Objects ]__ "
+" __[ Text Objects and Motions ]__ "
 Plug 'kana/vim-textobj-user'                             " User text objects (for the next plugin)
 Plug 'kana/vim-textobj-function'                         " Function Textobject
 Plug 'kentaro/vim-textobj-function-php'                  " PHP functions (f)
+Plug 'jeetsukumaran/vim-indentwise'                      " Move by ident
 
 " ___[ PHP ]___ "
 Plug 'mattn/emmet-vim'          , { 'for': 'php' }  " HTML Tags

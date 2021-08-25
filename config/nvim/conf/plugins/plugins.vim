@@ -12,17 +12,19 @@ Plug 'terryma/vim-multiple-cursors'                 " Multiple Cursors (Alt-n)
 Plug 'kshenoy/vim-signature'                        " Show Marks
 Plug 'justinmk/vim-sneak'                           " Go to the next 2 chars (sXX)
 Plug 'joeytwiddle/sexy_scroller.vim'                " Smooth Motion
+Plug 'dkprice/vim-easygrep'                         " Global search and replace
 
 " ___[ Code ]___ "
 Plug 'neoclide/coc.nvim'                                 " Coc Autocomplete
 Plug 'junegunn/vim-easy-align'                           " Align comments
 Plug 'andy-piccalilli/vim-jsdoc',{ 'for': 'javascript' } " JSDoc
 Plug 'xolox/vim-misc'                                    " xolox libs (for ctags)
-Plug 'xolox/vim-easytags'                                " Manage Ctags
+"Plug 'xolox/vim-easytags'                                " Manage Ctags
 Plug 'wellle/targets.vim'                                " Extend targets like ',' and '_'
 Plug 'mpolitzer/plaintasks.vim'                          " Todo Lists (.todo)
 Plug 'forevernull/vim-json-format'                       " json format
 Plug 'jiangmiao/auto-pairs'                              " Auto close brackets
+Plug 'WolfgangMehner/bash-support'                       " Bash support
 
 " __[ Text Objects and Motions ]__ "
 Plug 'kana/vim-textobj-user'                             " User text objects (for the next plugin)

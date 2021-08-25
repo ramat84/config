@@ -25,3 +25,5 @@ filetype plugin on
 "let g:tagbar_sort = 0
 set tags=./tags;/
 
+let g:easytags_async = 1
+

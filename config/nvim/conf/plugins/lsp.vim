@@ -1,0 +1,2 @@
+set completeopt=menuone,noselect
+

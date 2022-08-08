@@ -1,11 +1,11 @@
 "colorscheme onedark 
 colorscheme molokai
-" let g:gruvbox_contrast_dark='hard'
+let g:gruvbox_contrast_dark='hard'
 
 "colorscheme material
 set background=dark
-" set autoread
-" set showcmd
+set autoread
+set showcmd
 "set rnu " Relative number
 
 " highlight LineNr ctermfg=gray ctermbg=DarkBlue
@@ -14,10 +14,11 @@ set background=dark
 
 set scrolloff=20 " Always show these lines after the caret 
 
-" let g:gruvbox_contrast_dark='medium'
-" let g:rainbow_active = 1
 
-" let g:multi_cursor_use_default_mapping=0
+let g:gruvbox_contrast_dark='medium'
+let g:rainbow_active = 1
+
+let g:multi_cursor_use_default_mapping=0
 
 " Default mapping
 let g:multi_cursor_start_word_key      = '<Leader>v'
@@ -31,8 +32,8 @@ let g:multi_cursor_quit_key            = '<Esc>'
 
 " Tags
 
-" let Tlist_Use_Right_Window = 1
-" let g:tagbar_sort = 0
+let Tlist_Use_Right_Window = 1
+let g:tagbar_sort = 0
 
 hi clear SpellCap
 hi SpellCap cterm=underline ctermfg=red
@@ -45,9 +46,3 @@ hi Normal ctermbg=16 guibg=#1d1d1d
 hi LineNr ctermbg=16 guibg=#1d1d1d
 
 hi Normal guibg=NONE ctermbg=NONE
-
-set foldmethod=manual
-set foldmarker={,}
-set foldlevel=20
-set fdo-=search
-set noswapfile

@@ -1,39 +1,56 @@
 " Installed Plugins
+let g:node_host_prog = '/usr/local/n/versions/node/16.4.2/bin/node'
+
 call plug#begin('~/.config/nvim/plugged')
 
 " ___[ GUI ]___ "
 Plug 'vim-airline/vim-airline'                      " Status Line
 Plug 'vim-airline/vim-airline-themes'               " Status Line Themes
-" Plug 'morhetz/gruvbox'                            " Gruvbox theme
+" Plug 'morhetz/gruvbox'                              " Gruvbox theme
 Plug 'tomasr/molokai'                               " Theme
+" Plug 'powerline/powerline'                          " Status line
 Plug 'ryanoasis/vim-devicons'                       " File Manager Icons
 Plug 'kaicataldo/material.vim', { 'branch': 'main'} " Color Theme
+" Plug 'terryma/vim-multiple-cursors'                 " Multiple Cursors (Alt-n)
 Plug 'kshenoy/vim-signature'                        " Show Marks
-Plug 'justinmk/vim-sneak'                           " Go to the next 2 chars (sXX)
-Plug 'joeytwiddle/sexy_scroller.vim'                " Smooth Motion
-" Plug 'preservim/tagbar'                             " Tags Sidebar
-" Plug 'xolox/vim-easytags'                           " Tags
-" Plug 'mtscout6/vim-tagbar-css'                      " Sidebar css
-Plug 'farmergreg/vim-lastplace'                     " Intelligently reopen files at your last edit position
-Plug 'glepnir/dashboard-nvim' " Dashboard
+"Plug 'justinmk/vim-sneak'                           " Go to the next 2 chars (sXX)
+" Plug 'joeytwiddle/sexy_scroller.vim'                " Smooth Motion
+" Plug 'dkprice/vim-easygrep'                         " Global search and replace
 
 " ___[ File Manager ]___"
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Search In Files
 Plug 'junegunn/fzf.vim'                             " Search In Files
 Plug 'preservim/nerdtree'                           " File Manager
+" Plug 'numEricL/nerdtree-live-preview'               " Preview
+" Plug 'francoiscabrol/ranger.vim'                    " File Manager
+" Plug 'rbgrouleff/bclose.vim'                        " Ranger dependency
 
 " ___[ Code ]___ "
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'andy-piccalilli/vim-jsdoc',{ 'for': 'javascript' } " JSDoc
+" Plug 'neoclide/c oc.nvim'                                 " Coc Autocomplete
+" Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'} " Coc Autocomplete
+" Plug 'neovim/nvim-lspconfig'                             " Language Server
+" Plug 'hrsh7th/nvim-cmp'                                  " Autocomplete
+" Plug 'junegunn/vim-easy-align'                           " Align comments
+Plug 'andy-piccalilli/vim-jsdoc',{ 'for': 'javascript' } " JSDoc
 " Plug 'xolox/vim-misc'                                    " xolox libs (for ctags)
-Plug 'wellle/targets.vim'                                  " Extend targets like ',' and '_'
-Plug 'vimwiki/vimwiki'                                     " Wiki for todo
+"Plug 'xolox/vim-easytags'                                " Manage Ctags
+Plug 'wellle/targets.vim'                                " Extend targets like ',' and '_'
+" Plug 'mpolitzer/plaintasks.vim'                          " Todo Lists (.todo)
 " Plug 'forevernull/vim-json-format'                       " json format
 " Plug 'jiangmiao/auto-pairs'                              " Auto close brackets
 " Plug 'WolfgangMehner/bash-support'                       " Bash support
-Plug 'wellle/context.vim'                                  " Code context
-Plug 'Yggdroot/indentLine'                                 " Vertical lines
-Plug 'kurocode25/mdforvim' " Markdown to HTML
+
+" __[ LSP ]
+Plug 'neovim/nvim-lspconfig' " Default config
+Plug 'williamboman/nvim-lsp-installer' " Lsp Install
+
+"Plug 'hrsh7th/cmp-nvim-lsp' " Autocomplete
+"Plug 'hrsh7th/cmp-buffer'
+"Plug 'hrsh7th/cmp-path'
+"Plug 'hrsh7th/cmp-cmdline'
+"Plug 'hrsh7th/nvim-cmp'
+
+Plug 'ms-jpq/coq_nvim'
 
 " __[ Text Objects and Motions ]__ "
 " Plug 'kana/vim-textobj-user'                             " User text objects (for the next plugin)
@@ -41,20 +58,17 @@ Plug 'kurocode25/mdforvim' " Markdown to HTML
 " Plug 'kentaro/vim-textobj-function-php'                  " PHP functions (f)
 Plug 'jeetsukumaran/vim-indentwise'                      " Move by ident
 Plug 'easymotion/vim-easymotion'                         " Jump quckly
-Plug 'bkad/CamelCaseMotion'                              " Camel case motion
 
 " ___[ PHP ]___ "
 " Plug 'mattn/emmet-vim'          , { 'for': 'php' }  " HTML Tags
 " Plug 'tobyS/vmustache'          , { 'for': 'php'  } " PHPDoc Requirement
 " Plug 'tobyS/pdv'                , { 'for': 'php'  } " PHPdoc            | Use Ctrl-P
-" Plug 'puremourning/vimspector' " Debug 
-" Plug 'vim-vdebug/vdebug' " Debug 
 
 " ___[ Markdown ]___ "
-Plug 'SidOfc/mkdx' " Markdown
+" Plug 'tpope/vim-markdown' " Markdown
 
 " ___[ Syntax ]___ "
-Plug 'pangloss/vim-javascript'                                   " Better javascript support
+" Plug 'pangloss/vim-javascript'                                   " Better javascript support
 " Plug 'martinda/Jenkinsfile-vim-syntax', { 'for': 'Jenkinsfile' } " Edit Jenkinsfile with ease
 " Plug 'sheerun/vim-polyglot'                                      " Languages support
 " Plug 'prettier/vim-prettier'                                     " Prettier code
@@ -72,11 +86,17 @@ Plug 'chrisbra/improvedft'                          " Multiline find (f/t)
 " ___[ Tweaks ]___ "
 Plug 'machakann/vim-highlightedyank'                " Highlight Yanked
 " Plug 'okcompute/vim-javascript-motions', { 'for': 'javascript' } " Javascript Motions
-" Plug 'fcpg/vim-osc52'                               " Global Terminal Clipboard Support
+Plug 'fcpg/vim-osc52'                               " Global Terminal Clipboard Support
 " Plug 'svermeulen/vim-cutlass'                       " Just cut
 
-" ___[ VIM ]___ "
-"Plug 'ThePrimeagen/vim-be-good'
+" ___[ Archive ]___
+" Plug 'preservim/tagbar'                                  " Tags list
+"Plug 'preservim/nerdcommenter'                           " Toggle Comments (<L>cc)
+"Plug 'aikawa9376/vim-textobj-php'                        " PHP Tag Object (p)
+"Plug 'adelarsq/vim-matchit'                              " Required for function php
+"Plug 'thinca/vim-textobj-function-javascript'
+"Plug 'segeljakt/vim-stealth'                        " Toggle Comments Visibility
+"Plug 'thaerkh/vim-workspace'                        " Save sessions (for tmux)
 
 call plug#end()
 

@@ -11,8 +11,8 @@ nnoremap <leader>r yiw:%s/<C-r>"/<C-r>"/g<left><left>
 nnoremap <leader>f yiw:Rg <C-r>"<CR>
 
 " Toggle numbers
-"nmap <leader>n :set nu!<CR>:set relativenumber!<CR> 
 nmap <leader>n :set nu!<CR>
+"nmap <leader>n :set nu!<CR>
 
 nmap <leader>d o echo 'okk'.__LINE__;die();<ESC>:w<CR>
 
@@ -31,14 +31,12 @@ nmap <C-m> :NERDTreeFind<CR>
 "
 "" Close
 "
-nmap <C-c> :bd<CR>
-nmap <C-q> :bd!<CR>
+nmap <leader>cb :bd<CR> " Close Buffer
+nmap <leader>qb :bd!<CR> " Force Close Buffer
 "
 "" Prev/Next
-nmap <F3> :bprev<CR>
-nmap <F4> :bnext<CR>
-nmap <M-z> :bprev<CR>
-nmap <M-x> :bnext<CR>
+nmap <C-[> :bprev<CR>
+nmap <C-]> :bnext<CR>
 
 " New line
 "map <Enter> o<ESC>
@@ -48,5 +46,18 @@ nmap <M-x> :bnext<CR>
 nnoremap <esc> :noh<return><esc>
 nnoremap <esc>^[ <esc>^[
 
-map { <Plug>(IndentWisePreviousEqualIndent)
-map } <Plug>(IndentWiseNextEqualIndent)
+" map { <Plug>(IndentWisePreviousEqualIndent)
+" map } <Plug>(IndentWiseNextEqualIndent)
+
+" Vim Cutlass
+nnoremap x "_d
+nnoremap xx "_dd
+
+" Use semicolumn
+nmap s <Plug>(easymotion-bd-f)
+
+" quick move between windows 
+nnoremap <C-Left> <C-W>h
+nnoremap <C-Down> <C-W>j
+nnoremap <C-Up> <C-W>k
+nnoremap <C-Right> <C-W>l
